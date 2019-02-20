@@ -2,6 +2,19 @@
 #**/*.js
 #**/*.js.map
 
+# Firebase debug output.
+/firebase-debug.log
+
+# tsconfig.json `outDir`.
+/lib/
+
+# Browser version, copied by `cp-angular.js`.
+/dist/browser/
+
+# webpack.server.config.js `app` library.
+/dist/server.js
+/dist/server/
+
 # Typescript v1 declaration files
 typings/
 
