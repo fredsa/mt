@@ -54,3 +54,5 @@ app.get('*', (req, res) => {
 // app.listen(PORT, () => {
 //   console.log(`Node Express server listening on http://localhost:${PORT}`);
 // });
+
+console.log('sever.ts ======> app', app);
