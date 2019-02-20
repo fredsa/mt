@@ -17,6 +17,12 @@ module.exports = {
   output: {
     // Puts the output at the root of the dist folder
     path: path.join(__dirname, 'dist'),
+
+    // Package our server code as a library that can be consumed by the Node function.
+    // https://fireship.io/lessons/angular-universal-firebase/
+    library: 'app',
+    libraryTarget: 'umd',
+
     filename: '[name].js'
   },
   module: {
