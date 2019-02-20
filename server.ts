@@ -1,3 +1,10 @@
+// Firebase uses Websockets and XHR not included in Angular that we need to polyfill for Express.
+// $ npm install ws xhr2 bufferutil utf-8-validate -D
+// https://fireship.io/lessons/angular-universal-firebase/
+(global as any).WebSocket = require('ws');
+(global as any).XMLHttpRequest = require('xhr2');
+
+
 import 'zone.js/dist/zone-node';
 import {enableProdMode} from '@angular/core';
 // Express Engine
