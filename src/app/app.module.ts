@@ -11,6 +11,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from 'src/environments/environment';
 import { UsersComponent } from './users/users.component';
 import { AboutComponent } from './about/about.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,9 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
+
+    AppRoutingModule,
+
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
